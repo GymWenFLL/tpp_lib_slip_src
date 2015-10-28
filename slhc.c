@@ -685,7 +685,7 @@ slhc_toss(struct slcompress *comp)
 	return 0;
 }
 
-#else /* CONFIG_INET */
+/*
 
 int
 slhc_toss(struct slcompress *comp)
@@ -725,7 +725,7 @@ slhc_init(int rslots, int tslots)
   printk(KERN_DEBUG "Called IP function on non IP-system: slhc_init");
   return NULL;
 }
-
+*/
 /* VJ header compression */
 EXPORT_SYMBOL(slhc_init);
 EXPORT_SYMBOL(slhc_free);
